@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Project By JavaScript
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div id="container">
+  <ion-card>
+    <ion-card-header>
+      <img src="https://img.freepik.com/free-vector/data-protection-concept_1284-10819.jpg?size=626&ext=jpg&uid=R96505005&ga=GA1.2.347220167.1678514750&semt=sph" alt="" > 
+   <ion-input placeholder="ENTER YOUR PASSWORD" type="password" id="user-input"></ion-input>
+      <ion-button color="danger" id="set-btn"  expand="full"><ion-icon name="key" slot="start"></ion-icon>
+      <ion-label> Set Password</ion-label>
+      </ion-button>
+      <ion-button color="success" style="display: none;" id="access-btn" expand="full"><ion-icon name="key" slot="start"></ion-icon>
+      <ion-label> Access</ion-label>
+      </ion-button>
+      <small id="password-empty-notice" style="display: none; color: red; text-align: center; font-size: larger;">your password is empty</small>
+      <small id="worng-password" style="display: none; color: red; text-align: center; font-size: larger;">Password is wrong</small>
+  </ion-card-header>
+  </ion-card>
+ </div>
+ 
+<div id="app-page" style="display: none;" >
+ 
+  <ion-card style="display: none;"  id="contact-form">
+    <ion-card-header>
+    <img src="assets/image/download.png" alt="">
+     <ion-input placeholder="your name" style="border-bottom: 0.5px solid #ccc; " class="image-margin-bottom" id="contact-name">
+
+     </ion-input>
+     <ion-input placeholder="your Number" style="border-bottom: 0.5px solid #ccc; " class="image-margin-bottom" id="contact-number">
+
+     </ion-input>
+
+    </ion-card-header>
+  </ion-card>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="add-btn">
+<ion-fab-button>
+  <ion-icon name="add" color="light"></ion-icon>
+</ion-fab-button>
+  </ion-fab>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" id="save-btn" style="display: none;">
+<ion-fab-button color="danger">
+  <ion-icon name="save" color="light"></ion-icon>
+</ion-fab-button>
+  </ion-fab>
+  
+</div>
+  
+</ion-content>
