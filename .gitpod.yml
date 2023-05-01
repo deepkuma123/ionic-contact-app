@@ -6,7 +6,7 @@
 
 tasks:
   - name: Install Node.js
-    command: nvm install <version>
+    command: nvm install 14
     # Replace <version> with the Node.js version you want to use
     # For example, to install Node.js version 14.16.0, use "nvm install 14.16.0"
   - init: npm install && npm run build
